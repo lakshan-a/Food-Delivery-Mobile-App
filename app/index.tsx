@@ -1,14 +1,17 @@
-import { Text, View,StyleSheet,SafeAreaView,Image,Button,Alert } from "react-native";
+import { Text, View,StyleSheet,Image,Button,Alert } from "react-native";
 // import {SafeAreaView, StyleSheet, View, Text, Image} from 'react-native';
-import COLORS from '../app/colors.js';
-import {PrimaryButton} from '../app/Button.js';
+import COLORS from '../app/consts/colors';
+import {PrimaryButton} from '../app/consts/Button';
 import {FlatList} from 'react-native-gesture-handler';
+import {SafeAreaView} from 'react-native-safe-area-context';
+
 
 
 
 import React from "react";
 
-export default function Index() {
+// export default function Index()  {
+  const OnBoardScreen = ({navigation}) => {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: COLORS.white}}>
       <View style={{height: 400}}>
@@ -41,9 +44,18 @@ export default function Index() {
           <View style={style.indicator} />
           <View style={style.indicator} />
         </View>
+        {/* <PrimaryButton onPress={() => alert('home')}
+          title="Get Started"
+        /> */}
         <PrimaryButton
+          onPress={() => navigation.navigate('Home')}
           title="Get Started"
         />
+
+{/* <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')}>
+        <Text style={styles.Text}> SIGN UP </Text>
+      </TouchableOpacity> */}
+
       </View>
     </SafeAreaView>
   )

@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "app/consts/Button.js", "app/home.js", "app/navigation/BottomNavigator.js"  ]
 }

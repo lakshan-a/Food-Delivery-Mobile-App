@@ -7,7 +7,8 @@ import tw from 'twrnc';
 // import {MapPinIcon} from 'react-native-heroicons/solid';
 // import {BellIcon,MagnifyingGlassIcon} from 'react-native-heroicons/outline'
 import{categories, coffeeItems} from '../app/consts/index'
-import Carousel from 'react-native-snap-carousel';
+// import Carousel from 'react-native-snap-carousel';
+import coffeeCard from './coffeeCard';
 
 
 export default function index() {
@@ -76,11 +77,7 @@ export default function index() {
         </View>
 
         <View style={tw`mt-16 py2`}>
-          <Carousel
-            containerCustomSyle={{overflow:'visible'}}
-            data={coffeeItems}
-            renderItem={({item})=> <CoffeeCard}
-          />
+          {/*   */}
         </View>
 
       </SafeAreaView>

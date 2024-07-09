@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import { Text, View,StyleSheet,Image,Button,Alert,TouchableOpacity,FlatList,TextInput } from "react-native";
-import COLORS from '../app/consts/colors';
+import COLORS from './consts/colors';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import tw from 'twrnc';
 // import {MapPinIcon} from 'react-native-heroicons/solid';
 // import {BellIcon,MagnifyingGlassIcon} from 'react-native-heroicons/outline'
-import{categories, coffeeItems} from '../app/consts/index'
-// import Carousel from 'react-native-snap-carousel';
-import coffeeCard from './coffeeCard';
+import{categories, coffeeItems} from './consts/index'
+import Carousel from 'react-native-snap-carousel';
+import {coffeeCard} from '../app/coffeeCard';
+
 
 
 export default function index() {
@@ -76,9 +77,24 @@ export default function index() {
             />
         </View>
 
-        <View style={tw`mt-16 py2`}>
-          {/*   */}
-        </View>
+        {/* <View>
+          <coffeeCard/>
+        </View> */}
+
+        {/* <View style={tw`mt-16 py2`}>
+          <Carousel
+          containerCustomStyle={{overflow:'visible'}}
+          data={coffeeItems}
+          loop={true}
+          // renderItem={({item})=> <coffeeCard item={item}/>}
+          firstItem={1}
+          inactiveSlideOpacity={0.75}
+          inactiveSlideScale={0.77}
+          sliderWidth={400}
+          itemWidth={260}
+          slideStyle={{display:'flex',alignItems:'center'}}
+          />
+        </View> */}
 
       </SafeAreaView>
     </View>

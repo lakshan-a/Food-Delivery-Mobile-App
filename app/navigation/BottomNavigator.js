@@ -2,10 +2,10 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import COLORS from '../../consts/colors';
+import COLORS from '../consts/colors.js';
 import {View} from 'react-native';
-import HomeScreen from '../screens/HomeScreen';
-import CartScreen from '../screens/CartScreen';
+import HomeScreen from '../screens/HomeScreen.tsx';
+import CartScreen from '../screens/CartScreen.tsx/index.ts';
 
 const Tab = createBottomTabNavigator();
 

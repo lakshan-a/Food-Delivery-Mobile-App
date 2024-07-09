@@ -1,7 +1,7 @@
 import { Text, View,StyleSheet,SafeAreaView,Image,Button,Alert } from "react-native";
 // import {SafeAreaView, StyleSheet, View, Text, Image} from 'react-native';
-import COLORS from '../app/consts/colors';
-import {PrimaryButton} from '../app/consts/Button';
+import COLORS from '../consts/colors';
+import {PrimaryButton} from '../consts/Button';
 import {FlatList} from 'react-native-gesture-handler';
 
 

@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import COLORS from '../consts/colors.js';
 import {View} from 'react-native';
 import HomeScreen from '../screens/HomeScreen.tsx';
-import CartScreen from '../screens/CartScreen.tsx/index.ts';
+import CartScreen from '../screens/CartScreen.tsx';
 
 const Tab = createBottomTabNavigator();
 

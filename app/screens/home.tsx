@@ -18,7 +18,7 @@ export default function Index() {
             resizeMode: 'contain',
             top: -50,
           }}
-          source={require('../assets/images/Frame40.png')}
+          source={require('../../assets/images/Frame40.png')}
         />
       </View>
       <View style={style.textContainer}>
@@ -41,9 +41,9 @@ export default function Index() {
           <View style={style.indicator} />
           <View style={style.indicator} />
         </View>
-        <PrimaryButton onPress={() => alert('home')}
+        {/* <PrimaryButton onPress={() => alert('home')}
           title="Get Started"
-        />
+        /> */}
 
 {/* <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed!')}>
         <Text style={styles.Text}> SIGN UP </Text>

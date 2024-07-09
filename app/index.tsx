@@ -1,13 +1,12 @@
 import React from 'react'
-import { Text, View,StyleSheet,Image,Button,Alert,TouchableOpacity } from "react-native";
+import { Text, View,StyleSheet,Image,Button,Alert,TouchableOpacity,FlatList,TextInput } from "react-native";
 import COLORS from '../app/consts/colors';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import tw from 'twrnc';
 // import {MapPinIcon} from 'react-native-heroicons/solid';
 // import {BellIcon,MagnifyingGlassIcon} from 'react-native-heroicons/outline'
-import { TextInput } from 'react-native-gesture-handler';
-
+import{categories} from '../app/consts/index'
 
 
 export default function index() {
@@ -47,6 +46,10 @@ export default function index() {
               />
             </TouchableOpacity>
           </View>
+        </View>
+
+        <View style={tw`px-5 mt-6`}>
+          <FlatList/>
         </View>
 
       </SafeAreaView>

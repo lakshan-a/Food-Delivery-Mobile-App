@@ -6,7 +6,8 @@ import { StatusBar } from 'expo-status-bar';
 import tw from 'twrnc';
 // import {MapPinIcon} from 'react-native-heroicons/solid';
 // import {BellIcon,MagnifyingGlassIcon} from 'react-native-heroicons/outline'
-import{categories} from '../app/consts/index'
+import{categories, coffeeItems} from '../app/consts/index'
+import Carousel from 'react-native-snap-carousel';
 
 
 export default function index() {
@@ -56,7 +57,7 @@ export default function index() {
             horizontal
             showsHorizontalScrollIndicator={false}
             data={categories}
-            keyExtractor = {item=> item.id}
+            keyExtractor={item=> item.id}
             style={tw`overflow-visible`}
             renderItem={({item})=>{
               let isActive = item.id==activeCategory;
@@ -72,6 +73,14 @@ export default function index() {
               )
             }}
             />
+        </View>
+
+        <View style={tw`mt-16 py2`}>
+          <Carousel
+            containerCustomSyle={{overflow:'visible'}}
+            data={coffeeItems}
+            renderItem={({item})=> <CoffeeCard}
+          />
         </View>
 
       </SafeAreaView>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Text, View,StyleSheet,Image,Button,Alert,TouchableOpacity,FlatList,TextInput } from "react-native";
 import COLORS from '../app/consts/colors';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -10,6 +10,9 @@ import{categories} from '../app/consts/index'
 
 
 export default function index() {
+
+  const  [activeCategory, setActiveCategory] = useState(1);
+
   return (
     <View style={tw`flex-1 relative bg-wite`}>
       <StatusBar/>
@@ -49,7 +52,26 @@ export default function index() {
         </View>
 
         <View style={tw`px-5 mt-6`}>
-          <FlatList/>
+          <FlatList 
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            data={categories}
+            keyExtractor = {item=> item.id}
+            style={tw`overflow-visible`}
+            renderItem={({item})=>{
+              let isActive = item.id==activeCategory;
+              let activeTextClass = isActive? 'text-white': 'text-gray-700';
+              return(
+                <TouchableOpacity 
+                  onPress={()=> setActiveCategory(item.id)}
+                  style={tw`p-4 px-5 rounded-full mr-2 shadow isActive? COLORS.primary:bg-[#e6e6e6]`}>
+                  <Text style={tw`font-semibold + activeCategory` }>
+                    {item.title}
+                  </Text>
+                </TouchableOpacity>
+              )
+            }}
+            />
         </View>
 
       </SafeAreaView>

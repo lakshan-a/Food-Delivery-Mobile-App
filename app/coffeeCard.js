@@ -23,6 +23,7 @@ export default function coffeeCard({item}) {
         }}>
             <Image source={item.image} style={tw`h-40 w-40`}></Image>
         </View>
+
         <View style={tw`px-5 mt-5 space-y-3`}>
           <Text style={tw`text-3xl text-white font-semibold z-10`}>
             {item.name}
@@ -32,6 +33,23 @@ export default function coffeeCard({item}) {
                 style={tw`h-5 w-5`}
             />
             <Text style={tw`text-base font-semibold text-white`}>{item.stars}</Text>
+          </View>
+          <View style={tw`flex-row space-x-1 z-10 mb-6`}>
+            <Text style={tw`text-base text-white font-semibold opacity-60`}>
+              volume
+            </Text>
+            <Text style={tw`text-base text-white font-semibold `}>
+              {item.volume}
+            </Text>
+          </View>
+
+          <View style={tw`flex-row justify-between item-center`}>
+            <Text style={tw`text-white font-bold text-lg`}>Rs. {item.price}</Text>
+            <TouchableOpacity style={tw`p-4 bg-wite rounded-full`}>
+              <Image source={require('../assets/images/plus.png')}
+                  style={tw`h-5 w-5`}
+              />
+            </TouchableOpacity>
           </View>
         </View>
     </View>

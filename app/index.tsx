@@ -89,7 +89,46 @@ export default function index(){
           </View>
         </View>
 
+        <View style={tw`mx-4 space-y-2 h-28`}>
+          <Text style={tw`text-lg font-bold`}>About</Text>
+          <Text style={tw`text-gray-600`}>
+            {/* {item.desc} */}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam 
+            repudiandae beatae eveniet unde quia qui officiis nihil 
+          </Text>
+        </View>
+
+        <View style={tw`flex-row justify-between items-center mx-4 mb-2`}>
+          <View style={tw`flex-row items-center space-x-1`}>
+            <Text style={tw`text-base text-gray-700 font-semibold opactiy-60`}>
+              Volume :
+            </Text>
+            <Text style={tw`text-base text-black font-semibold`}>
+              120
+            </Text>
+          </View>
+
+          <View style={tw`flex-row items-center space-x-4 border-gray-500 border rounde-full p-1 px-4`}>
+            <TouchableOpacity>
+                <Image  source={require('../assets/images/minus-sign.png')}/>
+            </TouchableOpacity>
+            <Text style={tw`font-extrabold text-lg`}>2</Text>
+            <TouchableOpacity>
+                <Image  source={require('../assets/images/plus(1).png')}/>
+            </TouchableOpacity>
+          </View>
+        </View>
+
+        <View style={tw`flex-row justify-between items-center mx-4`}>
+          <TouchableOpacity style={tw`p-4 rounded-full border border-gray-400`}>
+              <Image  source={require('../assets/images/shop.png')}/>
+          </TouchableOpacity>
+          <TouchableOpacity style={tw`p-5 rounded-full flex-1 ml-3 bg-[#F9813A]`}>
+            <Text style={tw`text-center text-base font-semibold text-white`}>Buy now</Text>
+          </TouchableOpacity>
+        </View>
         
+
 
       </SafeAreaView>
     </View>

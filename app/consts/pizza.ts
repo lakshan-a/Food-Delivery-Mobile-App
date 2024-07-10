@@ -1,26 +1,3 @@
-export const categories = [
-    {
-        id:1,
-        title:"Pizza"
-    },
-    {
-        id:2,
-        title:"Chicken"
-    },
-    {
-        id:3,
-        title:"Burger"
-    },
-    {
-        id:4,
-        title:"Potato"
-    },
-    {
-        id:5,
-        title:"Drinks"
-    },
-
-]
 
 export const coffeeItems = [
     {
@@ -38,7 +15,7 @@ export const coffeeItems = [
         price:'1500.00',
         volume:'100ml',
         stars:'4.5',
-        image:require('../../assets/images/pizzza.png'),
+        image:require('../../assets/images/pin.png'),
         desc:'React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like '
     },
     {
@@ -69,3 +46,5 @@ export const coffeeItems = [
         desc:'React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like '
     }
 ]
+
+export default coffeeItems;

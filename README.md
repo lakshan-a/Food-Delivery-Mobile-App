@@ -10,7 +10,7 @@
 
 ### Login Screen
 
-<img src="" width="300" height="600">
+<img src="https://raw.githubusercontent.com/lakshan-a/Food-Delivery-Mobile-App/master/assets/screenshots/Screenshot%202024-07-11%20155300.png" width="300" height="600">
 
 ### Home Screen
 

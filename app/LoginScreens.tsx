@@ -25,7 +25,7 @@ export default function LoginScreen() {
                         <Link href="/home">LOGIN</Link>
                     </TouchableOpacity> */}
                     <TouchableOpacity style={styles.btnContainer}>
-                        <Link href="/cart" style={styles.textBtn}>LOGIN</Link>
+                        <Link href="/foodDetail" style={styles.textBtn}>LOGIN</Link>
                     </TouchableOpacity>
                     <View >
                         {/*<CheckBox value={false} style={styles.checkbox} />*/}

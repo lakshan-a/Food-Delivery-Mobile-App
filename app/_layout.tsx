@@ -9,6 +9,7 @@ export default function RootLayout() {
             <Stack.Screen name="LoginScreens" options={{ headerShown: false }} />
             <Stack.Screen name="home" options={{ headerShown: false }} />
             <Stack.Screen name="cart" options={{ headerShown: false }} />
+            <Stack.Screen name="foodDetail" options={{ headerShown: false }} />
         </Stack>
     );
 };

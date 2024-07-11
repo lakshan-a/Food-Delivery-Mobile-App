@@ -46,7 +46,7 @@ const Loading = () => {
         <View style={styles.container}>
             <Animated.View style={{ transform: [{ rotate: rotateInterpolate }] }}>
                 <ImageBackground
-                    source={require('../assets/images/partial-react-logo.png')} // Adjust path if necessary
+                    // source={require('../assets/images/partial-react-logo.png')} // Adjust path if necessary
                     style={styles.logo}
                 >
                     <Animated.Text style={[styles.overlayText, { transform: [{ scale: pulseAnim }] }]}>

@@ -1,7 +1,7 @@
 import { Text, View,StyleSheet,Image,Alert,TouchableOpacity } from "react-native";
 // import {SafeAreaView, StyleSheet, View, Text, Image} from 'react-native';
-import COLORS from '../app/consts/colors';
-import {PrimaryButton} from '../app/consts/Button';
+import COLORS from './consts/colors';
+import {PrimaryButton} from './consts/Button';
 import {Link} from "expo-router";
 import {SafeAreaView} from 'react-native-safe-area-context';
 import tw from 'twrnc';
@@ -43,16 +43,16 @@ export default function getStated({})  {
           <View style={style.indicator} />
           <View style={style.indicator} />
         </View>
-        <PrimaryButton onPress={() => alert('home')}
+        {/* <PrimaryButton onPress={() => alert('home')}
           title="Get Started"
-        />
+        /> */}
 
       {/* <TouchableOpacity style={style.btnContainer} onPress={() => alert('Button pressed!')}>
         <Text> Get Started </Text>
       </TouchableOpacity> */}
 
-      <TouchableOpacity style={style.loginButton}>
-          <Link href="/Login">Get Started</Link>
+      <TouchableOpacity style={style.btnContainer}>
+          <Link href="/LoginScreens" style={style.textBtn}>Get Started</Link>
       </TouchableOpacity>
 
       </View>
@@ -61,6 +61,18 @@ export default function getStated({})  {
 }
 
 const style = StyleSheet.create({
+  btnContainer: {
+    backgroundColor: COLORS.primary,
+    height: 60,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  textBtn:{
+    color:COLORS.white,
+    fontSize:15,
+    fontWeight: 'bold',
+  },
   loginButton: {
     width: 125,
     height: 40,
@@ -75,13 +87,6 @@ loginButtonText: {
     fontSize: 18,
     fontWeight: 'bold',
 },
-  btnContainer: {
-    backgroundColor: COLORS.primary,
-    height: 60,
-    borderRadius: 30,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   textContainer: {
     flex: 1,
     paddingHorizontal: 50,

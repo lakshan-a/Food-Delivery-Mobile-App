@@ -2,14 +2,11 @@ import React from 'react';
 import { View, Text, TextInput, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {Link} from "expo-router";
+import COLORS from './consts/colors';
 
-export default function LoginScreen() {
+export default function LoginScreens() {
     return (
         <View style={styles.container}>
-            <ImageBackground
-                source={require('../assets/images/login/8656.jpg')}
-                style={styles.backgroundImage}
-            >
                 <View style={styles.overlay}>
                     <Text style={styles.signInText}>Sign In</Text>
                     <View style={styles.inputContainer}>
@@ -23,16 +20,14 @@ export default function LoginScreen() {
                     <TouchableOpacity style={styles.loginButton}>
                         <Link href="/home">LOGIN</Link>
                     </TouchableOpacity>
-                    <View style={styles.rememberMeContainer}>
+                    <View>
                         {/*<CheckBox value={false} style={styles.checkbox} />*/}
-                        <Text style={styles.rememberMeText}>Remember me</Text>
                         <TouchableOpacity>
                             <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
                         </TouchableOpacity>
                     </View>
                     <Text style={styles.signUpText}>Don’t have an account? <Text style={styles.signUpLink}>Sign Up</Text></Text>
                 </View>
-            </ImageBackground>
         </View>
     );
 }
@@ -40,12 +35,6 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    backgroundImage: {
-        width: '100%',
-        height: '100%',
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -79,22 +68,16 @@ const styles = StyleSheet.create({
     loginButton: {
         width: 125,
         height: 40,
-        backgroundColor: '#ffa500',
+        backgroundColor: COLORS.primary,
         paddingVertical: 10,
         paddingHorizontal: 40,
         borderRadius: 5,
         marginVertical: 20,
     },
     loginButtonText: {
-        color: '#000',
+        color: COLORS.white,
         fontSize: 18,
         fontWeight: 'bold',
-    },
-    rememberMeContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        width: '100%',
     },
     checkbox: {
         marginRight: 10,

@@ -1,8 +1,8 @@
-import { Text, View,StyleSheet,Image,Button,Alert,TouchableOpacity } from "react-native";
+import { Text, View,StyleSheet,Image,Alert,TouchableOpacity } from "react-native";
 // import {SafeAreaView, StyleSheet, View, Text, Image} from 'react-native';
 import COLORS from '../app/consts/colors';
 import {PrimaryButton} from '../app/consts/Button';
-import {FlatList} from 'react-native-gesture-handler';
+import {Link} from "expo-router";
 import {SafeAreaView} from 'react-native-safe-area-context';
 import tw from 'twrnc';
 
@@ -51,12 +51,30 @@ export default function getStated({})  {
         <Text> Get Started </Text>
       </TouchableOpacity> */}
 
+      <TouchableOpacity style={style.loginButton}>
+          <Link href="/Login">Get Started</Link>
+      </TouchableOpacity>
+
       </View>
     </SafeAreaView>
   )
 }
 
 const style = StyleSheet.create({
+  loginButton: {
+    width: 125,
+    height: 40,
+    backgroundColor: '#ffa500',
+    paddingVertical: 10,
+    paddingHorizontal: 40,
+    borderRadius: 5,
+    marginVertical: 20,
+},
+loginButtonText: {
+    color: '#000',
+    fontSize: 18,
+    fontWeight: 'bold',
+},
   btnContainer: {
     backgroundColor: COLORS.primary,
     height: 60,

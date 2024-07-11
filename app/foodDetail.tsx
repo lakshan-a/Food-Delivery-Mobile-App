@@ -5,6 +5,8 @@ import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import COLORS from "./consts/colors";
+import {Link} from "expo-router";
+
 
 
 
@@ -64,7 +66,7 @@ export default function index(){
             </Text>
         </View>
 
-        <View style={tw`mx-4 space-y-2 mt-2`}>
+        <View style={tw`mx-4 space-y-2 mt-5`}>
           <Text style={tw`text-lg font-bold`}>Pizza size</Text>
           <View style={tw`flex-row justfy-between mt-2`}>
             <TouchableOpacity 
@@ -95,16 +97,15 @@ export default function index(){
           </View>
         </View>
 
-        <View style={tw`mx-4 space-y-2 h-28 mt-2`}>
+        <View style={tw`mx-4 space-y-2 h-28 mt-8`}>
           <Text style={tw`text-lg font-bold`}>About</Text>
           <Text style={tw`text-gray-600`}>
             {/* {item.desc} */}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam 
-            repudiandae beatae eveniet unde quia qui officiis nihil 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit laboriosam eius autem error eligendi iste, sequi itaque maxime sed iusto amet, quaerat ab praesentium culpa officia exercitationem voluptatem. Natus, mollitia.
           </Text>
         </View>
 
-        <View style={tw`flex-row justify-between items-center mx-4 mb-2 mt--5 mb-5`}>
+        <View style={tw`flex-row justify-between items-center mx-4 mb-2 mt-5 mb-5`}>
           <View style={tw`flex-row items-center space-x-1`}>
             <Text style={tw`text-base text-gray-700 font-semibold opactiy-60`}>
               Volume :
@@ -125,12 +126,14 @@ export default function index(){
           </View>
         </View>
 
-        <View style={tw`flex-row justify-between items-center mx-4`}>
+        <View style={tw`flex-row justify-between items-center mx-4 mt-50`}>
           <TouchableOpacity style={tw`p-4 rounded-full border border-gray-400`}>
               <Image  source={require('../assets/images/shop.png')}/>
           </TouchableOpacity>
           <TouchableOpacity style={tw`p-5 rounded-full flex-1 ml-3 bg-[#F9813A]`}>
+          <Link href="/cart" style={{textAlign:'center'}}> 
             <Text style={tw`text-center text-base font-semibold text-white`}>Buy now</Text>
+          </Link>
           </TouchableOpacity>
         </View>
         

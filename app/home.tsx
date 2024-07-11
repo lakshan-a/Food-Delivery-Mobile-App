@@ -9,6 +9,7 @@ import{categories, coffeeItems} from './consts/coffeeItems'
 import { NativeStackNavigationProp } from "react-native-screens/lib/typescript/native-stack/types";
 import { ParamListBase, useNavigation } from "@react-navigation/native";
 import {Link} from "expo-router";
+import foodDetail from './foodDetail';
 
 
 
@@ -130,17 +131,13 @@ export default function index() {
 
             <View style={tw`flex-row justify-between item-center`}>
               <Text style={tw`text-white font-bold text-lg`}>Rs.1500.00</Text>
-              <TouchableOpacity
-                // onPress={()=> navigation.navigate('Product',{...product})}
-                // style={tw`p-4 bg-wite rounded-full`}
-                // style={{backgroundColor:COLORS.white, rowGap:12}}
-                style={{height:40, width:40, position:'absolute',right:30,backgroundColor:COLORS.white,borderRadius:20,top:20 }}
-
-              >
-                <Image source={require('../assets/images/plus.png')}
+              <TouchableOpacity>
+                  <Link href="/foodDetail"style={{height:40, width:40, position:'absolute',right:30,backgroundColor:COLORS.white,borderRadius:20,top:20 }}>
+                    <Image source={require('../assets/images/plus.png')}
                     // style={tw`h-5 w-5`}
-                    style={{left:8,top:8}}
-                />
+                      style={{left:8,top:8}}
+                    />
+                  </Link>
               </TouchableOpacity>
             </View>
           </View>
@@ -181,17 +178,13 @@ export default function index() {
 
             <View style={tw`flex-row justify-between item-center`}>
               <Text style={tw`text-white font-bold text-lg`}>Rs.1200.00</Text>
-              <TouchableOpacity
-                // onPress={()=> navigation.navigate('Product',{...product})}
-                // style={tw`p-4 bg-wite rounded-full`}
-                // style={{backgroundColor:COLORS.white, rowGap:12}}
-                style={{height:40, width:40, position:'absolute',right:30,backgroundColor:COLORS.white,borderRadius:20,top:20 }}
-
-              >
-                <Image source={require('../assets/images/plus.png')}
+              <TouchableOpacity>
+                  <Link href="/foodDetail"style={{height:40, width:40, position:'absolute',right:30,backgroundColor:COLORS.white,borderRadius:20,top:20 }}>
+                    <Image source={require('../assets/images/plus.png')}
                     // style={tw`h-5 w-5`}
-                    style={{left:8,top:8}}
-                />
+                      style={{left:8,top:8}}
+                    />
+                  </Link>
               </TouchableOpacity>
             </View>
           </View>
@@ -201,13 +194,37 @@ export default function index() {
         
           <View style={styles.container}>
             <View style={styles.navBar}>
-              <Ionicons
+
+            <TouchableOpacity>
+                  <Link href="/home">
+                  <Ionicons
+                      name="home-outline"
+                      size={24}
+                      color="white"
+                      onPress={() => navigation.navigate("Home")}
+                    />
+                  </Link>
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+                  <Link href="/cart">
+                  <Ionicons
+                      name="basket-outline"
+                      size={24}
+                      color="white"
+                      onPress={() => navigation.navigate("Home")}
+                    />
+                  </Link>
+            </TouchableOpacity>
+
+              {/* <Ionicons
                 name="home-outline"
                 size={24}
                 color="white"
                 onPress={() => navigation.navigate("Home")}
-              />
-              <TouchableOpacity>
+              /> */}
+
+              {/* <TouchableOpacity>
                 <Link href="/cart">
                 <Ionicons
                   name="basket-outline"
@@ -215,7 +232,7 @@ export default function index() {
                   color="white"
                   onPress={() => navigation.navigate("Notification")}
                 /></Link>
-              </TouchableOpacity>
+              </TouchableOpacity> */}
 
               <Ionicons
                 name="person-outline"

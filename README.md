@@ -1,50 +1,25 @@
-# Welcome to your Expo app 👋
+# Food Delivery Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Technologies Used
 
-## Get started
+- **React Native:** For building the cross-platform mobile application.
+- **Native Base:** For a consistent and customizable component library.
+- **Expo:** For a streamlined development workflow and easy deployment.
 
-1. Install dependencies
+ ## Screenshots
 
-   ```bash
-   npm install
-   ```
+###Get Started Screen
 
-2. Start the app
+<img src="https://raw.githubusercontent.com/lakshan-a/Food-Delivery-Mobile-App/master/assets/screenshots/Screenshot%202024-07-11%20155300.png" width="300" height="600">
 
-   ```bash
-    npx expo start
-   ```
+### Login Screen
 
-In the output, you'll find options to open the app in a
+<img src="https://raw.githubusercontent.com/lakshan-a/Food-Delivery-Mobile-App/master/assets/screenshots/Screenshot%202024-07-11%20155322.png" alt="Home Screen" width="300" height="600">
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Home Screen
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<img src="https://raw.githubusercontent.com/lakshan-a/Food-Delivery-Mobile-App/master/assets/screenshots/Screenshot%202024-07-11%20160416.png" alt="Home Screen" width="300" height="600">
 
-## Get a fresh project
+## License
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.

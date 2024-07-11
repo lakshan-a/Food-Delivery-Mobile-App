@@ -8,25 +8,17 @@
 
  ## Screenshots
 
+###Get Started Screen
+
+<img src="https://raw.githubusercontent.com/lakshan-a/Food-Delivery-Mobile-App/master/assets/screenshots/Screenshot%202024-07-11%20155300.png" width="300" height="600">
+
 ### Login Screen
 
-<img src="" width="300" height="600">
+<img src="https://raw.githubusercontent.com/lakshan-a/Food-Delivery-Mobile-App/master/assets/screenshots/Screenshot%202024-07-11%20155322.png" alt="Home Screen" width="300" height="600">
 
 ### Home Screen
 
-<img src="" alt="Home Screen" width="300" height="600">
-
-### Parts Listing
-
-<img src="" alt="Home Screen" width="300" height="600">
-
-### Followers List
-
-<img src="" alt="Home Screen" width="300" height="600">
-
-### Profile
-
-<img src="" alt="Home Screen" width="300" height="600">
+<img src="https://raw.githubusercontent.com/lakshan-a/Food-Delivery-Mobile-App/master/assets/screenshots/Screenshot%202024-07-11%20160416.png" alt="Home Screen" width="300" height="600">
 
 ## License
 

@@ -39,19 +39,22 @@ export default function index(){
           // }}
         >
           {/* <Image source={item.image} style={tw`h-60 w-60`}/> */}
-          <Image source={require('../assets/images/arrow-right(1).png')} style={tw`h-60 w-60`}/>
+          <Image source={require('../assets/images/pizzza.png')} style={tw`h-60 w-60`}/>
         </View>
-        <View style={tw`flex-row mx-4 items-center rounded-3xl p-1 px-2 space-x-1 w-16 opacity-90`}>
-            <Image source={require('../assets/images/star.png')}
-                style={tw`h-5 w-5`}
-            />
-            {/* <Text style={tw`text-base font-semibold text-white`}>{product.stars}</Text> */}
-            <Text style={tw`text-base font-semibold text-white`}>4.3</Text>
+        <View style={{backgroundColor:COLORS.primary,left:10,width:60,bottom:40,borderRadius:30}}>
+            <View style={tw`flex-row mx-4 items-center rounded-3xl p-1 px-2 space-x-1 w-16 opacity-90 ml-0`}>
+                <Image source={require('../assets/images/star.png')}
+                    style={{width:15, height:15}}
+                />
+                {/* <Text style={tw`text-base font-semibold text-white`}>{product.stars}</Text> */}
+                <Text style={tw`text-base font-semibold text-white ml-1`}>4.3</Text>
+            </View>
         </View>
-        <View style={tw`mx-4 flex-row justify-between item-center`}>
+        
+        <View style={tw`mx-4 flex-row justify-between item-center mt--7`}>
             <Text 
             // style={{color:COLORS.dark}}
-            style={tw`text-lg font-semibold`}>
+            style={tw`text-lg font-semibold `}>
               Pizza
             </Text>
             <Text 
@@ -61,35 +64,38 @@ export default function index(){
             </Text>
         </View>
 
-        <View style={tw`mx-4 space-y-2`}>
+        <View style={tw`mx-4 space-y-2 mt-2`}>
           <Text style={tw`text-lg font-bold`}>Pizza size</Text>
-          <View style={tw`flex-row justfy-between`}>
+          <View style={tw`flex-row justfy-between mt-2`}>
             <TouchableOpacity 
             onPress={()=> setSize('small')}
-              // style={tw`p-3 px-8 round-full`}
-              style={{backgroundColor:size=='small'? COLORS.light: 'rgba(0,0,0,0,0.07'}}
+            //   style={tw`p-3 px-8 round-full`}
+              style={{borderRadius:30,width:70,height:30, backgroundColor:size=='small'? COLORS.light: 'black'}}
             >
-              {/* <Text className={size=='small'? 'text-white': 'text-gray-700'}>small</Text> */}
+                {/* className={size=='small'? 'text-white': 'text-gray-700'} */}
+              <Text style={{color:COLORS.primary,left:20,top:4}}>small</Text>
             </TouchableOpacity>
+
             <TouchableOpacity 
-            onPress={()=> setSize('medium')}
+            onPress={()=> setSize('medium') }
               // style={tw`p-3 px-8 round-full`}
-              style={{backgroundColor:size=='medium'? COLORS.light: 'rgba(0,0,0,0,0.07'}}
+              style={{borderRadius:30,width:80,height:30,left:10,backgroundColor:size=='medium'? COLORS.light: 'black'}}
             >
-              {/* <Text className={size=='medium'? 'text-white': 'text-gray-700'}>medium</Text> */}
+              <Text style={{color:COLORS.primary,left:14,top:4}}>medium</Text>
             </TouchableOpacity>
+
             <TouchableOpacity 
             onPress={()=> setSize('large')}
               // style={tw`p-3 px-8 round-full`}
-              style={{backgroundColor:size=='large'? COLORS.light: 'rgba(0,0,0,0,0.07'}}
+              style={{borderRadius:30,width:70,height:30,left:20,backgroundColor:size=='large'? COLORS.light: 'black'}}
             >
-              {/* <Text className={size=='large'? 'text-white': 'text-gray-700'}>large</Text> */}
+              <Text style={{color:COLORS.primary,left:20,top:4}}>large</Text>
             </TouchableOpacity>
 
           </View>
         </View>
 
-        <View style={tw`mx-4 space-y-2 h-28`}>
+        <View style={tw`mx-4 space-y-2 h-28 mt-2`}>
           <Text style={tw`text-lg font-bold`}>About</Text>
           <Text style={tw`text-gray-600`}>
             {/* {item.desc} */}
@@ -98,7 +104,7 @@ export default function index(){
           </Text>
         </View>
 
-        <View style={tw`flex-row justify-between items-center mx-4 mb-2`}>
+        <View style={tw`flex-row justify-between items-center mx-4 mb-2 mt--5 mb-5`}>
           <View style={tw`flex-row items-center space-x-1`}>
             <Text style={tw`text-base text-gray-700 font-semibold opactiy-60`}>
               Volume :
@@ -108,13 +114,13 @@ export default function index(){
             </Text>
           </View>
 
-          <View style={tw`flex-row items-center space-x-4 border-gray-500 border rounde-full p-1 px-4`}>
-            <TouchableOpacity>
-                <Image  source={require('../assets/images/minus-sign.png')}/>
+          <View style={tw`flex-row items-center space-x-4 border-gray-500 border rounde-full p-1 px-2 rounded-full`}>
+            <TouchableOpacity style={{width:40}}>
+                <Image  source={require('../assets/images/minus-sign.png')} style={{width:20 ,height:8}}/>
             </TouchableOpacity>
-            <Text style={tw`font-extrabold text-lg`}>2</Text>
+            <Text style={tw`font-extrabold text-lg mr-3`}>2</Text>
             <TouchableOpacity>
-                <Image  source={require('../assets/images/plus(1).png')}/>
+                <Image  source={require('../assets/images/plus(1).png')} style={{width:20 ,height:20,left:3}}/>
             </TouchableOpacity>
           </View>
         </View>

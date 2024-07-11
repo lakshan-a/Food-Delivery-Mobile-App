@@ -4,9 +4,13 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import {Link} from "expo-router";
 import COLORS from './consts/colors';
 
-export default function LoginScreens() {
+export default function LoginScreen() {
     return (
         <View style={styles.container}>
+            <ImageBackground
+                source={require('../assets/images/home/home1.png')}
+                style={styles.backgroundImage}
+            >
                 <View style={styles.overlay}>
                     <Text style={styles.signInText}>Sign In</Text>
                     <View style={styles.inputContainer}>
@@ -17,10 +21,13 @@ export default function LoginScreens() {
                         <Icon name="lock-closed-outline" size={20} color="#fff" style={styles.icon} />
                         <TextInput placeholder="Password" placeholderTextColor="#fff" secureTextEntry style={styles.input} />
                     </View>
-                    <TouchableOpacity style={styles.loginButton}>
+                    {/* <TouchableOpacity style={styles.loginButton}>
                         <Link href="/home">LOGIN</Link>
+                    </TouchableOpacity> */}
+                    <TouchableOpacity style={styles.btnContainer}>
+                        <Link href="/home" style={styles.textBtn}>LOGIN</Link>
                     </TouchableOpacity>
-                    <View>
+                    <View >
                         {/*<CheckBox value={false} style={styles.checkbox} />*/}
                         <TouchableOpacity>
                             <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
@@ -28,6 +35,7 @@ export default function LoginScreens() {
                     </View>
                     <Text style={styles.signUpText}>Don’t have an account? <Text style={styles.signUpLink}>Sign Up</Text></Text>
                 </View>
+            </ImageBackground>
         </View>
     );
 }
@@ -38,6 +46,12 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
+    backgroundImage: {
+        width: '100%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     overlay: {
         width: 300,
         height: 330,
@@ -45,7 +59,19 @@ const styles = StyleSheet.create({
         padding: 20,
         borderRadius: 10,
         alignItems: 'center',
-    },
+    },btnContainer: {
+        backgroundColor: COLORS.primary,
+        height: 40,
+        width:150,
+        borderRadius: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
+      textBtn:{
+        color:COLORS.white,
+        fontSize:15,
+        fontWeight: 'bold',
+      },
     signInText: {
         fontSize: 30,
         color: '#fff',
@@ -65,20 +91,6 @@ const styles = StyleSheet.create({
         flex: 1,
         color: '#fff',
     },
-    loginButton: {
-        width: 125,
-        height: 40,
-        backgroundColor: COLORS.primary,
-        paddingVertical: 10,
-        paddingHorizontal: 40,
-        borderRadius: 5,
-        marginVertical: 20,
-    },
-    loginButtonText: {
-        color: COLORS.white,
-        fontSize: 18,
-        fontWeight: 'bold',
-    },
     checkbox: {
         marginRight: 10,
     },
@@ -88,13 +100,14 @@ const styles = StyleSheet.create({
     forgotPasswordText: {
         color: '#fff',
         textDecorationLine: 'underline',
+        top:10
     },
     signUpText: {
         color: '#fff',
         marginTop: 20,
     },
     signUpLink: {
-        color: '#ffa500',
+        color: COLORS.primary,
         fontWeight: 'bold',
     },
 });

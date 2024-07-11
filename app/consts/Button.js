@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, TouchableOpacity, View, Text} from 'react-native';
-import COLORS from './colors';
+import COLORS from '../consts/colors';
 
 const PrimaryButton = ({title, onPress = () => {}}) => {
   return (

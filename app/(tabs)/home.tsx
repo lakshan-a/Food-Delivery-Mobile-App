@@ -81,7 +81,6 @@ const Page = () => {
                     <Listings listings={listingData} category={category}/>
                     <GroupListings listings={groupData}/>
 
-                    {/* <GroupListing listings={groupData}/> */}
                     </ScrollView>
             </View>
         </>
@@ -97,12 +96,11 @@ const styles = StyleSheet.create({
         backgroundColor:Colors.bgColor,
     },
     menuImage:{
-        width:360, 
+        width:"100%", 
         height:210, 
         top:-10,
         borderBottomLeftRadius:50,
         borderBottomRightRadius:50,
-        // position:'absolute'
       },
     headingTxt:{
         fontSize:28,

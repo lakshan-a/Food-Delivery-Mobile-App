@@ -31,7 +31,7 @@ export default function deliverys() {
     <View style={tw`bg-[#F9813A] flex-1`}>
         <SafeAreaView style={tw`z-50 h-45`}>
             <View style={tw`flex-row justify-between items-center p-5`}>
-            <TouchableOpacity onPress={() => {}} style={{
+            <TouchableOpacity onPress={()=> navigation.goBack()}style={{
             backgroundColor:"rgba(255,255,255,0.5)",
             borderRadius:10,
             padding:4,
@@ -63,9 +63,9 @@ export default function deliverys() {
                         style={tw`h-20 w-20`}
                     />
                 </View>
-               <Progress.Bar size={30} color='#F9813A' indeterminate={true}/>
+               <Progress.Bar color='#F9813A' indeterminate={true}/>
                 <Text style={tw`mt-3 text-gray-500`}>
-                    Your Order at {delivery.title} is being prepared
+                    Your Order at is being prepared
                 </Text>
             </View>
 

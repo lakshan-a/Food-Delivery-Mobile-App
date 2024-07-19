@@ -14,16 +14,16 @@ export default function delivery() {
   useEffect(() => {
     setTimeout(() => {
       navigation.navigate('delivary');
-    },4000);
+    },10000);
   }, []);
 
   return (
       <SafeAreaView style={tw`bg-white flex-1 justify-center item-center`}>
         <Animatable.Image
-          source={require('../assets/images/delivary/DeliveryServiceBoy.gif')}
+          source={require('../assets/images/delivary/DeliveryServiceBoy2.gif')}
           animation="slideInUp"
           iterationCount={1}
-          style={{width:340,height:200,backgroundColor:Colors.white}}
+          style={{width:"100%",height:200,backgroundColor:Colors.white}}
         />
 
         <Animatable.Text

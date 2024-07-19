@@ -22,6 +22,7 @@ export default function getStated({})  {
           }}
           source={require('../assets/images/Frame40.png')}
         />
+        <Text>hello</Text>
       </View>
       <View style={style.textContainer}>
         <View>

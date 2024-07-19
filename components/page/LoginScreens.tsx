@@ -1,14 +1,14 @@
 import React from 'react';
-import { View, Text, TextInput, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, StyleSheet, ImageBackground, TouchableOpacity,Image } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {Link} from "expo-router";
-import COLORS from './consts/colors';
+import Colors from '@/constants/Colors';
 
 export default function LoginScreen() {
     return (
         <View style={styles.container}>
             <ImageBackground
-                source={require('../assets/images/home/home1.png')}
+                source={require('../../assets/images/home/home1.png')}
                 style={styles.backgroundImage}
             >
                 <View style={styles.overlay}>
@@ -27,13 +27,14 @@ export default function LoginScreen() {
                     <TouchableOpacity style={styles.btnContainer}>
                         <Link href="/home" style={styles.textBtn}>LOGIN</Link>
                     </TouchableOpacity>
-                    <View >
-                        {/*<CheckBox value={false} style={styles.checkbox} />*/}
-                        <TouchableOpacity>
-                            <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
-                        </TouchableOpacity>
+                    <View style={styles.googleButton}>
+                        <Image 
+                            source={require('../../assets/images/login/google-logo.png')} 
+                            style={styles.googleLogo}
+                        />
+                        <Text style={styles.googleButtonText}>Sign up with Google</Text>
                     </View>
-                    <Text style={styles.signUpText}>Don’t have an account? <Text style={styles.signUpLink}>Sign Up</Text></Text>
+                    <Text style={styles.signUpText}>Don’t have an account? <Link href="/SingUpScreen" style={styles.signUpLink}>SingUp</Link></Text>
                 </View>
             </ImageBackground>
         </View>
@@ -54,13 +55,14 @@ const styles = StyleSheet.create({
     },
     overlay: {
         width: 300,
-        height: 330,
+        height: 370,
         backgroundColor: 'rgba(0, 0, 0, 0.6)',
         padding: 20,
         borderRadius: 10,
         alignItems: 'center',
-    },btnContainer: {
-        backgroundColor: COLORS.primary,
+    },
+    btnContainer: {
+        backgroundColor: Colors.primary,
         height: 40,
         width:150,
         borderRadius: 30,
@@ -68,7 +70,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
       },
       textBtn:{
-        color:COLORS.white,
+        color:Colors.white,
         fontSize:15,
         fontWeight: 'bold',
       },
@@ -78,11 +80,17 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     inputContainer: {
+        width:220,
         flexDirection: 'row',
         alignItems: 'center',
         borderBottomWidth: 1,
-        borderBottomColor: '#fff',
+        borderBottomColor: Colors.white,
         marginBottom: 20,
+        borderWidth: 1,
+        borderColor:  Colors.white,
+        borderRadius: 5,
+        paddingHorizontal: 10,
+        paddingVertical: 5,
     },
     icon: {
         marginRight: 10,
@@ -107,7 +115,29 @@ const styles = StyleSheet.create({
         marginTop: 20,
     },
     signUpLink: {
-        color: COLORS.primary,
+        color: Colors.primary,
         fontWeight: 'bold',
     },
+    googleButton: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        borderWidth: 1,
+        borderColor: Colors.white,
+        borderRadius: 5,
+        padding: 10,
+        width: 220,
+        marginBottom: 5,
+        marginTop: 20,
+    },
+    googleLogo: {
+        width: 20,
+        height: 20,
+        marginRight: 10,
+    },
+    googleButtonText: {
+        color: Colors.white,
+        fontSize: 16,
+    }
 });

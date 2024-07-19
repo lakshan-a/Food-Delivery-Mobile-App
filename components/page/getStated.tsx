@@ -1,14 +1,15 @@
 import { Text, View,StyleSheet,Image,Alert,TouchableOpacity } from "react-native";
 // import {SafeAreaView, StyleSheet, View, Text, Image} from 'react-native';
-import COLORS from './consts/colors';
-import {PrimaryButton} from './consts/Button';
-import {Link} from "expo-router";
+import COLORS from '@/constants/Colors'
+import {Link, router} from "expo-router";
 import {SafeAreaView} from 'react-native-safe-area-context';
 import tw from 'twrnc';
 
 
 
 import React from "react";
+import { Button } from "react-native-elements/dist/buttons/Button";
+import Colors from "@/constants/Colors";
 
 export default function getStated({})  {
   return (
@@ -18,23 +19,22 @@ export default function getStated({})  {
           style={{
             width: '100%',
             resizeMode: 'contain',
-            top: -50,
+            bottom: 100,
           }}
-          source={require('../assets/images/Frame40.png')}
+          source={require('../../assets/images/Frame40.png')}
         />
-        <Text>hello</Text>
       </View>
       <View style={style.textContainer}>
         <View>
-          <Text style={{ marginTop: 150, fontSize: 50, fontWeight: 'bold', textAlign: 'center'}}>
+          <Text style={{ marginTop: 40, fontSize: 30, fontWeight: 'bold', textAlign: 'center'}}>
             Delicious Food
           </Text>
           <Text
             style={{
-              marginBottom: 10,
-              fontSize: 18,
+              marginBottom: 5,
+              fontSize: 15,
               textAlign: 'center',
-              color: COLORS.grey,
+              color: Colors.grey,
             }}>
             We help you to find best and delicious food
           </Text>
@@ -52,9 +52,15 @@ export default function getStated({})  {
         <Text> Get Started </Text>
       </TouchableOpacity> */}
 
-      <TouchableOpacity style={style.btnContainer}>
-          <Link href="/LoginScreens" style={style.textBtn}>Get Started</Link>
-      </TouchableOpacity>
+        <TouchableOpacity style={style.btnContainer}>
+            <Link href="/LoginScreen" style={style.textBtn}>Get Started</Link>
+        </TouchableOpacity>
+
+      {/* <Button 
+        onPress={()=>router.push('/LoginScreens')}
+        title='Get Started'
+        style={style.btnContainer}
+      ></Button> */}
 
       </View>
     </SafeAreaView>
@@ -63,11 +69,12 @@ export default function getStated({})  {
 
 const style = StyleSheet.create({
   btnContainer: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: Colors.primary,
     height: 60,
     borderRadius: 30,
     justifyContent: 'center',
     alignItems: 'center',
+    top:30
   },
   textBtn:{
     color:COLORS.white,
@@ -105,14 +112,14 @@ loginButtonText: {
     height: 12,
     width: 30,
     borderRadius: 10,
-    backgroundColor: COLORS.primary,
+    backgroundColor: Colors.primary,
     marginHorizontal: 5,
   },
   indicator: {
     height: 12,
     width: 12,
     borderRadius: 6,
-    backgroundColor: COLORS.grey,
+    backgroundColor: Colors.grey,
     marginHorizontal: 5,
   },
 });

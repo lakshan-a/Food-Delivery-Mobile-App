@@ -1,15 +1,59 @@
-import React from 'react';
-import { Link } from 'expo-router';
-import { View} from 'react-native';
-// import Loading from "./Loading";
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import getStated from '../components/page/getStated';
+import LoginScreen from '@/components/page/LoginScreens';
+import SingUpScreen from '@/components/page/SingUpScreen'
+import deliveryAnimation from '@/components/page/delivaryAnimation';
+import delivery from '@/components/page/delivary';
+import { Stack } from 'expo-router';
+import home from './(tabs)/home';
 
 
-export default function Index() {
-    return (
-        <View style={{ flex: 1 }}>
-            <Link href="/getStated" style={{ flex: 1 }}>
-                {/* <Loading/> */}
-            </Link>
-        </View>
-    );
+
+const stack = createNativeStackNavigator()
+
+
+export default function index() {
+  return (
+    <NavigationContainer independent={true}>
+    <stack.Navigator initialRouteName="Details">
+    {/* <stack.Screen name='home' component={home}   options={{
+        headerShown: false,
+      }}/> */}
+      {/* <stack.Screen name='getStated' component={getStated}   options={{
+            headerShown: false,
+          }}/>   */}
+      {/* <stack.Screen name='LoginScreen' component={LoginScreen}   options={{
+        headerShown: false,
+      }}/>   */}
+      {/* <stack.Screen name='SingUpScreen' component={SingUpScreen}   options={{
+        headerShown: false,
+      }}/>    */}
+      <stack.Screen name='deliveryAnimation' component={deliveryAnimation}   options={{
+        headerShown: false,
+      }}/>
+       <stack.Screen name='delivery' component={delivery}   options={{
+        headerShown: false,
+      }}/>
+    </stack.Navigator>
+
+    
+   </NavigationContainer>
+   
+  )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#000000",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+})
+
+
+

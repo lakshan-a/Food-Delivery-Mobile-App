@@ -2,8 +2,8 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import getStated from '../components/page/getStated';
-import LoginScreen from '@/components/page/LoginScreens';
+import getStated from './getStated';
+import LoginScreen from '@/app/LoginScreens';
 import SingUpScreen from '@/components/page/SingUpScreen'
 import deliveryAnimation from '@/components/page/delivaryAnimation';
 import delivery from '@/components/page/delivary';
@@ -22,21 +22,21 @@ export default function index() {
     {/* <stack.Screen name='home' component={home}   options={{
         headerShown: false,
       }}/> */}
-      {/* <stack.Screen name='getStated' component={getStated}   options={{
+      <stack.Screen name='getStated' component={getStated}   options={{
             headerShown: false,
-          }}/>   */}
+          }}/>  
       {/* <stack.Screen name='LoginScreen' component={LoginScreen}   options={{
         headerShown: false,
       }}/>   */}
       {/* <stack.Screen name='SingUpScreen' component={SingUpScreen}   options={{
         headerShown: false,
       }}/>    */}
-      <stack.Screen name='deliveryAnimation' component={deliveryAnimation}   options={{
+      {/* <stack.Screen name='deliveryAnimation' component={deliveryAnimation}   options={{
         headerShown: false,
       }}/>
        <stack.Screen name='delivery' component={delivery}   options={{
         headerShown: false,
-      }}/>
+      }}/> */}
     </stack.Navigator>
 
     

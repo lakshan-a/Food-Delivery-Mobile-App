@@ -8,7 +8,7 @@ export default function LoginScreen() {
     return (
         <View style={styles.container}>
             <ImageBackground
-                source={require('../../assets/images/home/home1.png')}
+                source={require('../assets/images/home/home1.png')}
                 style={styles.backgroundImage}
             >
                 <View style={styles.overlay}>
@@ -29,7 +29,7 @@ export default function LoginScreen() {
                     </TouchableOpacity>
                     <View style={styles.googleButton}>
                         <Image 
-                            source={require('../../assets/images/login/google-logo.png')} 
+                            source={require('../assets/images/login/google-logo.png')} 
                             style={styles.googleLogo}
                         />
                         <Text style={styles.googleButtonText}>Sign up with Google</Text>

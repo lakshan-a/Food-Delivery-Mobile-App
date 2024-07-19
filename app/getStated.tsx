@@ -4,9 +4,6 @@ import COLORS from '@/constants/Colors'
 import {Link, router} from "expo-router";
 import {SafeAreaView} from 'react-native-safe-area-context';
 import tw from 'twrnc';
-
-
-
 import React from "react";
 import { Button } from "react-native-elements/dist/buttons/Button";
 import Colors from "@/constants/Colors";
@@ -21,7 +18,7 @@ export default function getStated({})  {
             resizeMode: 'contain',
             bottom: 100,
           }}
-          source={require('../../assets/images/Frame40.png')}
+          source={require('../assets/images/Frame40.png')}
         />
       </View>
       <View style={style.textContainer}>
@@ -53,7 +50,7 @@ export default function getStated({})  {
       </TouchableOpacity> */}
 
         <TouchableOpacity style={style.btnContainer}>
-            <Link href="/LoginScreen" style={style.textBtn}>Get Started</Link>
+            <Link href="/LoginScreens" style={style.textBtn}>Get Started</Link>
         </TouchableOpacity>
 
       {/* <Button 

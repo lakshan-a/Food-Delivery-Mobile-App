@@ -59,7 +59,7 @@ export default function deliverys() {
                         <Text style={tw`text-lg text-gray-400`}>Estimated Arrival</Text>
                         <Text style={tw`text-3xl font-bold`}>45-50 Minutes</Text>
                     </View>
-                    <Image source={require('../../assets/images/delivary/delivaryBike.png')}
+                    <Image source={require('../assets/images/delivary/delivaryBike.png')}
                         style={tw`h-20 w-20`}
                     />
                 </View>
@@ -81,7 +81,7 @@ export default function deliverys() {
      
         <SafeAreaView style={tw`bg-white flex-row items-center space-x-5 h-20`}>
             <Image 
-                source={require('../../assets/images/delivary/delivaryBicycle.png')}
+                source={require('../assets/images/delivary/delivaryBicycle.png')}
                 style={tw`h-12 w-12 bg-gray-300 p-4 rounded-full ml-5`}
             /> 
 

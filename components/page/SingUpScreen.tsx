@@ -8,43 +8,33 @@ export default function LoginScreen() {
     return (
         <View style={styles.container}>
             <ImageBackground
-                source={require('../../assets/images/home/home1.png')}
+                source={require('../assets/images/home/home1.png')}
                 style={styles.backgroundImage}
             >
                 <View style={styles.overlay}>
-                    <Text style={styles.signInText}>Sign Up</Text>
+                    <Text style={styles.signInText}>Sign In</Text>
                     <View style={styles.inputContainer}>
                         <Icon name="person-outline" size={20} color="#fff" style={styles.icon} />
                         <TextInput placeholder="Username" placeholderTextColor="#fff" style={styles.input} />
                     </View>
                     <View style={styles.inputContainer}>
-                        <Icon name="mail-outline" size={20} color="#fff" style={styles.icon} />
-                        <TextInput placeholder="Email" placeholderTextColor="#fff" style={styles.input} />
-                    </View>
-                    <View style={styles.inputContainer}>
                         <Icon name="lock-closed-outline" size={20} color="#fff" style={styles.icon} />
                         <TextInput placeholder="Password" placeholderTextColor="#fff" secureTextEntry style={styles.input} />
-                    </View>
-                    <View style={styles.inputContainer}>
-                        <Icon name="lock-open-outline" size={20} color="#fff" style={styles.icon} />
-                        <TextInput placeholder="Confirm Password" placeholderTextColor="#fff" style={styles.input} />
                     </View>
                     {/* <TouchableOpacity style={styles.loginButton}>
                         <Link href="/home">LOGIN</Link>
                     </TouchableOpacity> */}
                     <TouchableOpacity style={styles.btnContainer}>
-                        <Link href="/LoginScreens" style={styles.textBtn}>SingUp</Link>
+                        <Link href="/home" style={styles.textBtn}>LOGIN</Link>
                     </TouchableOpacity>
-                    <View >
                     <View style={styles.googleButton}>
                         <Image 
-                            source={require('../../assets/images/login/google-logo.png')} 
+                            source={require('../assets/images/login/google-logo.png')} 
                             style={styles.googleLogo}
                         />
                         <Text style={styles.googleButtonText}>Sign up with Google</Text>
                     </View>
-                    </View>
-                    <Text style={styles.signUpText}>Already have an account? <Link href="/SingUpScreen" style={styles.signUpLink}>Login In</Link></Text>
+                    <Text style={styles.signUpText}>Don’t have an account? <Link href="/SingUpScreens" style={styles.signUpLink}>SingUp</Link></Text>
                 </View>
             </ImageBackground>
         </View>
@@ -65,12 +55,13 @@ const styles = StyleSheet.create({
     },
     overlay: {
         width: 300,
-        height: 480,
+        height: 370,
         backgroundColor: 'rgba(0, 0, 0, 0.6)',
         padding: 20,
         borderRadius: 10,
         alignItems: 'center',
-    },btnContainer: {
+    },
+    btnContainer: {
         backgroundColor: Colors.primary,
         height: 40,
         width:150,
@@ -121,7 +112,7 @@ const styles = StyleSheet.create({
     },
     signUpText: {
         color: '#fff',
-        marginTop: 10,
+        marginTop: 20,
     },
     signUpLink: {
         color: Colors.primary,
@@ -148,5 +139,5 @@ const styles = StyleSheet.create({
     googleButtonText: {
         color: Colors.white,
         fontSize: 16,
-    },
+    }
 });

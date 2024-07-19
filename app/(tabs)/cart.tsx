@@ -19,7 +19,6 @@ import {Link} from "expo-router";
 import tw from 'twrnc';
 import Colors from "@/constants/Colors";
 import { useHeaderHeight } from '@react-navigation/elements'
-import deliverys from "@/components/page/delivary";
 
 
 
@@ -200,7 +199,7 @@ export default function cart() {
         ))}
         <View style={{flexDirection:'row', justifyContent:'space-between'}}>
             <TouchableOpacity style={styles.btnBuy}>
-                <Link href="../../components/page/delivary" style={{textAlign:'center',top:15,color:Colors.white,fontWeight: 'bold'}}> 
+                <Link href="/delivaryAnimation" style={{textAlign:'center',top:15,color:Colors.white,fontWeight: 'bold'}}> 
                     <Text >Delivery now</Text>
                 </Link>
             </TouchableOpacity>

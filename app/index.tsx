@@ -4,7 +4,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import getStated from './getStated';
 import LoginScreen from '@/app/LoginScreens';
-import SingUpScreen from '@/components/page/SingUpScreen'
 import deliveryAnimation from '@/components/page/delivaryAnimation';
 import delivery from '@/components/page/delivary';
 import { Stack } from 'expo-router';

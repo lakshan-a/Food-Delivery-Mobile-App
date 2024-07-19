@@ -34,7 +34,7 @@ export default function LoginScreen() {
                         />
                         <Text style={styles.googleButtonText}>Sign up with Google</Text>
                     </View>
-                    <Text style={styles.signUpText}>Don’t have an account? <Link href="/SingUpScreen" style={styles.signUpLink}>SingUp</Link></Text>
+                    <Text style={styles.signUpText}>Don’t have an account? <Link href="/SingUpScreens" style={styles.signUpLink}>SingUp</Link></Text>
                 </View>
             </ImageBackground>
         </View>

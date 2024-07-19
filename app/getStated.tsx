@@ -10,7 +10,7 @@ import Colors from "@/constants/Colors";
 
 export default function getStated({})  {
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: COLORS.white}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: Colors.white}}>
       <View style={{height: 400}}>
         <Image
           style={{
@@ -74,7 +74,7 @@ const style = StyleSheet.create({
     top:30
   },
   textBtn:{
-    color:COLORS.white,
+    color:Colors.white,
     fontSize:15,
     fontWeight: 'bold',
   },

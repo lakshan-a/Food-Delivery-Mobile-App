@@ -6,8 +6,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.3",
         "price":"1200.00",
-        "duration":"3",
-        "location":"japan",
+        
         "category":"Pizza"
         
     },
@@ -18,8 +17,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.7",
         "price":"1000.00",
-        "duration":"3",
-        "location":"sri lanka",
+
         "category":"Pizza"
     },
     {
@@ -29,8 +27,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"5.0",
         "price":"1500.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Pizza"
     },
     {
@@ -40,8 +37,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.5",
         "price":"1500.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Burger"
     },
     {
@@ -51,8 +47,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.5",
         "price":"1500.00",
-        "duration":"3",
-        "location":"chinse",
+        
         "category":"Pizza"
     },
     {
@@ -62,8 +57,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.7",
         "price":"1500.00",
-        "duration":"3",
-        "location":"chinse",
+        
         "category":"Burger"
     },
     {
@@ -73,8 +67,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.6",
         "price":"1500.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Burger"
     },
     {
@@ -84,8 +77,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.9",
         "price":"500.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Fries"
     },
     {
@@ -95,8 +87,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"5.0",
         "price":"450.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Fries"
     },
     {
@@ -106,8 +97,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"5.1",
         "price":"550.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Fries"
     },
     {
@@ -117,8 +107,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.4",
         "price":"950.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Chicken"
     },
     {
@@ -128,8 +117,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.6",
         "price":"1050.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Chicken"
     },
     {
@@ -139,8 +127,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.3",
         "price":"1100.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Chicken"
     },
     {
@@ -150,8 +137,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.6",
         "price":"300.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Drinks"
     },
     {
@@ -161,8 +147,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.4",
         "price":"300.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Drinks"
     },
     {
@@ -172,8 +157,7 @@
         "description":"React Native lets you create truly native apps and doesnt compromise your users experiences. It provides a core set of platform agnostic native components like",
         "rating":"4.5",
         "price":"300.00",
-        "duration":"3",
-        "location":"chinse",
+
         "category":"Drinks"
     }
 ]

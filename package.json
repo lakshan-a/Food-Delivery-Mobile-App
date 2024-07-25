@@ -42,6 +42,7 @@
     "react-native-screens": "3.31.1",
     "react-native-snap-carousel": "^3.9.1",
     "react-native-vector-icons": "^10.1.0",
+    "react-native-video": "^6.4.2",
     "react-native-web": "~0.19.10",
     "twrnc": "^4.3.0"
   },

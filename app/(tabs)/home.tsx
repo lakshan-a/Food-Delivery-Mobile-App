@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, View, Image, TextInput, ScrollView} from 'react-native'
 import React, { useState } from 'react'
-import { Stack } from 'expo-router'
+import { Stack, useNavigation } from 'expo-router'
 import {Ionicons} from "@expo/vector-icons";
 import Colors from '@/constants/Colors';
 import { useHeaderHeight } from '@react-navigation/elements'
@@ -14,6 +14,8 @@ const Page = () => {
 
     const headerHeight = useHeaderHeight();
     const [category, setCategory] = useState('All');
+    const navigation = useNavigation();
+
 
     const onCatChanged = (category: string) => {    
         console.log("Categpry:",category);
@@ -26,7 +28,7 @@ const Page = () => {
                 headerTransparent:true,
                 headerTitle:"",
                 headerLeft: () => (
-                    <TouchableOpacity onPress={() => {}} 
+                    <TouchableOpacity onPress={()=> navigation.goBack()} 
                             style={{
                                 marginLeft:20, 
                                 marginBottom:20, 

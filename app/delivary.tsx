@@ -71,9 +71,9 @@ export default function deliverys() {
 
         </SafeAreaView>
 
-        <View style={styles.container}>
+        {/* <View style={styles.container}>
             <MapView style={styles.map}/>
-        </View>
+        </View> */}
 
             {/* <MapView>
                 

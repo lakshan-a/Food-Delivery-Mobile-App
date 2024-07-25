@@ -204,7 +204,7 @@ export default function cart() {
                 </Link>
             </TouchableOpacity>
             <TouchableOpacity style={styles.btnDelete}>
-                <Link href="/" style={{textAlign:'center',top:15,color:Colors.white,fontWeight: 'bold'}}> 
+                <Link href="/home" style={{textAlign:'center',top:15,color:Colors.white,fontWeight: 'bold'}}> 
                     <Text >Delete</Text>
                 </Link>
             </TouchableOpacity>

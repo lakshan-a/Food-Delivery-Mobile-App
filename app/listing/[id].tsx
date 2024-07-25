@@ -27,7 +27,7 @@ const ListingDetails = () => {
   return (
    <>
    <View>
-      <Image source={require('../../assets/images/home/home1.png')} style={styles.mainImg}/>
+      <Image source={require('../../assets/images/home/home6.jpg')} style={styles.mainImg}/>
       <View style={{flexDirection:'row',justifyContent:'space-between'}}>
         <TouchableOpacity onPress={()=> navigation.goBack()} style={{
             backgroundColor:"rgba(255,127,54,0.5)",
@@ -107,7 +107,7 @@ const ListingDetails = () => {
           </TouchableOpacity>
 
           <View style={styles.itemQty}>
-            <View style={tw`flex-row items-center space-x-4 border-gray-500 border rounde-full p-2 px-4 rounded-full`}>
+            <View style={tw`flex-row items-center space-x-4 border-gray-500 border rounde-5 p-2 px-6 rounded-2`}>
               <TouchableOpacity style={{width:40}}>
                 <FontAwesome5 name="minus" size={18} color={Colors.black} />
               </TouchableOpacity>
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
     width:250,
     marginTop:-160,
     borderRadius:140,
-    marginLeft:50
+    marginLeft:55
   },
   starIcon:{
     flexDirection: 'row',
@@ -205,7 +205,7 @@ const styles = StyleSheet.create({
   btnBuy:{
     backgroundColor:Colors.primary,
     width:180,
-    height:45,
+    height:44,
     borderRadius:10,
     textAlign:'center'
   },
